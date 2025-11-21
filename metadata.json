@@ -1,0 +1,7 @@
+{
+  "name": "Aynu CEX - Cosmic Exchange",
+  "description": "A high-performance, professional crypto exchange with cosmic aesthetics and real-time data visualization.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
