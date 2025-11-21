@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aynu CEX | Professional Trading</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              mono: ['JetBrains Mono', 'monospace'],
+            },
+            colors: {
+              bg: {
+                main: 'var(--bg-main)',
+                panel: 'var(--bg-panel)',
+                deep: 'var(--bg-deep)',
+              },
+              accent: {
+                primary: 'var(--accent-primary)',
+                secondary: 'var(--accent-secondary)',
+                success: '#4caf50',
+                danger: '#ff4b7d',
+                warning: '#ffb74d',
+              },
+              border: {
+                soft: 'rgba(137, 160, 255, 0.15)',
+                strong: 'rgba(152, 180, 255, 0.3)',
+              }
+            },
+            animation: {
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Theme Definitions */
+      :root {
+        --bg-main: #020309;
+        --bg-panel: rgba(10, 12, 34, 0.96);
+        --bg-deep: #050617;
+        --accent-primary: #7b5bff;
+        --accent-secondary: #37c5ff;
+        --gradient-start: #181b3f;
+        --gradient-mid: #050617;
+        --gradient-end: #020309;
+      }
+
+      /* Official (Cosmic) Theme - Default */
+      .theme-official {
+        --bg-main: #020309;
+        --bg-panel: rgba(10, 12, 34, 0.96);
+        --bg-deep: #050617;
+        --accent-primary: #7b5bff;
+        --accent-secondary: #37c5ff;
+        --gradient-start: #181b3f;
+        --gradient-mid: #050617;
+        --gradient-end: #020309;
+      }
+
+      /* Female (Pink) Theme */
+      .theme-female {
+        --bg-main: #140C12; /* Pink Darker */
+        --bg-panel: rgba(31, 18, 27, 0.96); /* Pink Dark with opacity */
+        --bg-deep: #1F121B; /* Pink Dark */
+        --accent-primary: #F50057; /* Pink Primary */
+        --accent-secondary: #FF4081; /* Pink Secondary */
+        --gradient-start: #2D1E2A; /* Pink Dark Light */
+        --gradient-mid: #1F121B;
+        --gradient-end: #140C12;
+      }
+
+      /* Male (Blue) Theme */
+      .theme-male {
+        --bg-main: #020617; /* Blue Darker */
+        --bg-panel: rgba(15, 23, 42, 0.96); /* Blue Dark with opacity */
+        --bg-deep: #0F172A; /* Blue Dark */
+        --accent-primary: #0A74DA; /* Blue Primary */
+        --accent-secondary: #1F93FF; /* Blue Secondary */
+        --gradient-start: #1E293B; /* Blue Dark Light */
+        --gradient-mid: #0F172A;
+        --gradient-end: #020617;
+      }
+
+      body {
+        background-color: var(--bg-main);
+        background-image: radial-gradient(circle at 50% 0%, var(--gradient-start) 0%, var(--gradient-mid) 45%, var(--gradient-end) 100%);
+        color: #f6f7ff;
+        overflow: hidden;
+        transition: background-color 0.5s ease, color 0.5s ease;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(0,0,0,0.2);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: rgba(137, 160, 255, 0.2);
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: rgba(137, 160, 255, 0.4);
+      }
+      .glass-panel {
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(137, 160, 255, 0.15);
+        box-shadow: 0 0 18px rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+</head>
+  <body class="theme-official">
+    <div id="root"></div>
+  </body>
+</html>
